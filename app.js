@@ -30,7 +30,7 @@ app.use('/hello', usersRouter);
 app.use('/notes', usersRouter);
 app.use('/cat', catRouter);
 app.use('/fox', foxRouter);
-app.use('/notes_from_b', notesFromBRouter);
+app.use('/notes_from_b', notes_from_bRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
