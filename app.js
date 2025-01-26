@@ -9,6 +9,8 @@ var usersRouter = require('./routes/users');
 var usersRouter = require('./routes/hello');
 var notesRouter = require('./routes/notes');
 var catRouter = require('./routes/cat');
+var foxRouter = require('./routes/fox');
+var notes_from_bRouter = require('./routes/notes_from_b')
 
 var app = express();
 
@@ -27,7 +29,8 @@ app.use('/users', usersRouter);
 app.use('/hello', usersRouter);
 app.use('/notes', usersRouter);
 app.use('/cat', catRouter);
-
+app.use('/fox', foxRouter);
+app.use('/notes_from_b', notes_from_bRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
